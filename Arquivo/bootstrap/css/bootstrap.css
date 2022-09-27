@@ -4008,7 +4008,7 @@ input[type="button"].btn-block {
 }
 .navbar-brand {
   display: inline-block;
-  font-family: 'Verdana';/*wf_SegoeUI 'Segoe UI Regular', 'Segoe UI', 'Segoe', 'Segoe WP', 'Tahoma', '', 'Arial', 'sans-serif', 'Segoe UI Web (West European)';*/
+  font-family: 'Verdana';/*wf_SegoeUI 'Segoe UI Regular', 'Segoe UI', 'Segoe', 'Segoe WP', 'Tahoma', '', 'Arial', 'sans-serif', '';*/
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;

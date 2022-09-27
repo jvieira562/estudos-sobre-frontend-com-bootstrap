@@ -1,24 +1,51 @@
-.navbar,
 #cabecalho {
     background-color: #0074e4;
     height: 48px;
-    padding-top: 4px;
 }
 
 .navbar-brand,
 #navbar_titulo {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    height: 32px;
-    color: white;
-}
-.bi bi-gear,
-#bi_configuracoes {
-    color: white;
-}
-
-.imagem_perfil {
-    width: 40px;
+    font-size: 15px;
     height: 40px;
+    width: 40px;
+    color: white;
+}
+#btn_configuracoes{
+    color: white;  
+    text-align: end;
+}
+#imagem_perfil_navbar{
+
+    width: 35px;
+    height: 35px;
     border-radius: 100%;
 }
+#imagem_perfil_menu{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+#offcanvas_title{
+    margin-left: 12px;
+}
+#offcanvas_perfil_conta{
+
+}
+#offcanvas_configuracoes
+{
+    margin-top: 48px
+}
+#offcanvas_perfil{
+    margin-top: 48px;
+}
+.lista_configuracoes
+{
+    list-style-type: none;
+    text-align: left;
+    margin-left: 0%;
+}
+.offcanvas-header{
+   margin-left: 80%;
+}
+

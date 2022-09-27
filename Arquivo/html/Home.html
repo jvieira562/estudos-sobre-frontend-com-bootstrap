@@ -15,17 +15,43 @@
 
     <nav class="navbar" id="cabecalho">
         <div class="container-fluid">
-            <div class="col-lg">
+            <!--<div class="col-lg">
                 <div class="container">
                     <a class="navbar-brand" id="navbar_titulo" href="#">Test</a>
                 </div>
             </div>
+
             <div class="col-lg">
-                <div class="container" id="navbar_configuracoes">
-                    <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
-                            class="bi bi-gear" id="bi_configuracoes"></i></a>
-                    <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTopLabel"><img
-                            class="imagem_perfil" src="../img/user-perfil.jpg"></a>
+                <div class="row">
+                    <div class="container" id="navbar_configuracoes">
+                        <div class="col-lg-1">
+                            <a data-bs-toggle="offcanvas" data-bs-target="#offcanvas_configuracoes"><i class="bi bi-gear"
+                                    id="bi_configuracoes"></i></a>
+                        </div>
+                        <div class="col-lg-1">
+                            <a data-bs-toggle="offcanvas" data-bs-target="#offcanvas_perfil"><img class="imagem_perfil"
+                                    src="../img/user-perfil.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm">
+                        <a class="navbar-brand" id="navbar_titulo" href="#">Test</a>
+                    </div>
+                    <div class="col-sm">
+                        <div class="row">
+                            <div class="col-sm" id="btn_configuracoes">
+                                <a data-bs-toggle="offcanvas" data-bs-target="#offcanvas_configuracoes"><i class="bi bi-gear"
+                                    id="bi_configuracoes"></i></a>
+                            </div>
+                            <div class="col-sm">
+                                <a data-bs-toggle="offcanvas" data-bs-target="#offcanvas_perfil"><img class="perfil" id="imagem_perfil_navbar"
+                                    src="../img/user-perfil.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -33,23 +59,56 @@
 </head>
 
 <body>
-    <div class="offcanvas offcanvas-end" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            ...
-        </div>
-    </div>
 
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas_configuracoes">
+        <div class="offcanvas_configuracoes">
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvas_configuracoes" aria-labelledby="offcanvasScrollingLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" data-bs-scroll="true" id="offcanvasRightLabel">Configurações</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <br>
+                <ul class="lista_configuracoes">
+                    <h6>Ajustes da plataforma</h6>
+                    <a href="">
+                        <li>Opções de armazenamento</li>
+                    </a>
+                </ul>
+
+                <div class="offcanvas-body">
+
+                </div>
+            </div>
         </div>
-        <div class="offcanvas-body">
-            ...
+
+        <div class="offcanvas_perfil">
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvas_perfil" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <a href="">
+                        <p>Sair</p>
+                    </a>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row">
+                        <div class="col-3">
+                            <div id="offcanvas_conta">
+                                <img src="../img/user-perfil.jpg" id="imagem_perfil_menu" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <h4>José Victor Vieira</h4>
+                            <p>jvieira@microsoft.com</p>
+                            <a href="">
+                                <p>Meu perfil</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
