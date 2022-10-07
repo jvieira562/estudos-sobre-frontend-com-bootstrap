@@ -15,9 +15,16 @@
 }
 
 .cor-especial {
-    color: darkred;
+    color: darkred!important;
 }
-
+.botao-cor-especial {
+    background-color: darkred!important;
+    color: white!important;
+}
+.card-configuracoes{
+    border-color: darkred;
+     max-width: 22rem!important;
+}
 .card-posicao-imagem {
     object-fit: cover;
     height: 200px;
