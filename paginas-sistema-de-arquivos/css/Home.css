@@ -1,0 +1,89 @@
+.navbar-config {
+    background-color: #ed1c24;
+    height: 48px;
+}
+.t48-48:hover {
+    background-color: #004d88;   
+}
+.t48-48{   
+    width: 48px!important;
+    height: 48px;
+    margin-left: 1px;
+    
+}
+.offcanvas-perfil {
+    margin-top: 48px;
+    width: 330px!important;
+}
+.container-principal-navbar{
+    height: 48px;    
+}
+.usuario-perfil-subtexto{
+    font-size: 13px;
+
+}
+.fonte-usuario-perfil {
+    font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+}
+#btn-configuracoes {
+    font-size: 18px;
+    color: #fffff9;
+}
+#imagem-perfil-navbar {
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+}
+
+#imagemPerfilOffcanvas{
+    height: 88px;
+    width: 88px;
+    border-radius: 100%;
+}
+#navbarNome{
+    color: #fffff9!important;
+    font-size: 16px;
+    font-family: SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
+}
+#nomeUsuarioPerfil{
+    font-size: 17px;
+}
+
+
+
+
+@media screen and (max-width: 319px) {
+ 
+    #navbarNome {
+        display: none;
+    }
+    #imagemPerfilOffcanvas {
+        display: none;
+    }
+}
+@media screen and (max-width: 576px) {
+    #barraDePesquisa {
+        display: none;
+    }
+    #imagemPerfilOffcanvas {
+        
+        display: block;
+        width: 250px;
+        height: 250px;
+    } 
+    #nomeUsuarioPerfil{
+        text-align: center;
+        font-size: 17px;
+    }
+    .usuario-perfil-subtexto{
+        font-size: 13px;
+        text-align: center;
+    }
+    #containerImagemPerfilOffcanvas{
+        height: 320px;
+    }
+    #containerTextoPerfilOffcanvas{
+        padding-top: 12px;
+    }
+}
+
