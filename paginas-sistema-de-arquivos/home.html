@@ -19,7 +19,7 @@
             <div class="col-3" style="height: 48px;">
                 <div class="row">
                     <div class="col float-md-none pt-2">
-                        <a class="navbar-brand" id="navbarNome" href="#">Sistema</a>
+                        <a class="navbar-brand" id="navbarNome" href="#">OneDrive</a>
                     </div>
                     <div class="col">
 
@@ -34,45 +34,94 @@
             <div class="col-sm-3">
                 <div class="row justify-content-end">
                     <div class="col-6 t48-48 pt-2 ps-3">
-                        <a href="#" class="bi bi-gear" id="btn-configuracoes"></a>
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasConfig" class="bi bi-gear" id="btn-configuracoes"></a>
                     </div>
                     <div class="col-6 t48-48 pt-2 ps-2">
-                        <a href=""><div>
-                            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPerfil"><img id="imagem-perfil-navbar" src="img/imagem-perfil.jpg" alt=""></a>
-                        </div></a>
-                        
+                        <a href="">
+                            <div>
+                                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasPerfil"><img
+                                        id="imagem-perfil-navbar" src="img/imagem-perfil.jpg" alt=""></a>
+                            </div>
+                        </a>
+
                     </div>
                 </div>
             </div>
         </nav>
 
-        <div class="offcanvas offcanvas-perfil offcanvas-end h-50" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasPerfil" aria-labelledby="offcanvasScrollingLabel">
-           
+        <section class="offcanvas offcanvas-perfil offcanvas-end border" data-bs-scroll="true" data-bs-backdrop="false"
+            tabindex="-1" id="offcanvasPerfil" aria-labelledby="offcanvasScrollingLabel">
+
             <div class="offcanvas-header h-10" data-bs-scroll="true">
 
-              <h5 class="offcanvas-title" id="offcanvasRightLabel">Sistema de Arquivos</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Sistema de Arquivos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="row offcanvas-body justify-content-center p-0">
+                    <div class="col-3 ms-1" id="containerImagemPerfilOffcanvas">
+                        <img id="imagemPerfilOffcanvas" src="img/imagem-perfil.jpg" alt="">
+                    </div>
+                
+                <div class="col-9 perfil-config fonte-usuario-perfil ms-2" id="containerTextoPerfilOffcanvas">
+                    <h4 id="nomeUsuarioPerfil">José Victor S. Vieira</h4>
+                    <p class="usuario-perfil-subtexto mb-1">josevictorvieira@gmail.com</p>
+                    <a href="#">
+                        <p class="usuario-perfil-subtexto pt-0 mb-1">Meu perfil</p>
+                    </a>
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasConfig">
+                        <p class="usuario-perfil-subtexto pt-0 mb-1">Configurações</p>
+                    </a>
+                    <a href="#">
+                        <p class="usuario-perfil-subtexto pt-0 mb-1">Sair</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="offcanvas offcanvas-config offcanvas-end border" data-bs-scroll="true" data-bs-backdrop="false"
+            tabindex="-1" id="offcanvasConfig" aria-labelledby="offcanvasScrollingLabel">
+
+            <div class="offcanvas-header h-10" data-bs-scroll="true">
+
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Configurações</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
             <div class="row offcanvas-body mx-auto">
-              <div class="col-sm-4" id="containerImagemPerfilOffcanvas">
-                <img id="imagemPerfilOffcanvas" src="img/imagem-perfil.jpg" alt="">
-              </div>
-              <div class="col-sm-8 perfil-config fonte-usuario-perfil" id="containerTextoPerfilOffcanvas">
-                <h4 id="nomeUsuarioPerfil">José Vicor Santos Vieira</h4>
-                <p class="usuario-perfil-subtexto mb-1">contato.josevictorvieira@gmail.com</p>
-                <a href="#"><p class="usuario-perfil-subtexto pt-0">Meu perfil</p></a>
-              </div>
+                <div class="col-sm-8 perfil-config fonte-usuario-perfil" id="containerTextoPerfilOffcanvas">
+                    <h4 id="nomeUsuarioPerfil">Configurações do Sistema</h4>
+                    <p class="usuario-perfil-subtexto mb-1">josevictorvieira@gmail.com</p>
+                    <a href="#">
+                        <p class="usuario-gear-subtexto pt-0">Opções</p>
+                        
+                    </a>
+                </div>
             </div>
-            <hr>
-            <div class="row offcanvas-footer h-25">
-                <ul>
-                    <li>teste</li>
-                </ul>
-            </div>
-
-          </div>
+        </section>
     </header>
+    <main>
+        <div class="row">
 
+            <div class="container-atalho border-end">
+                <p>dsds</p>
+            </div>
+
+            <div class="container-principal-body">
+
+                <div class="col-12 w-100 container-ferramenta">
+
+                </div>
+                <div class="col-12 container-conteudo">
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 
 </body>
 

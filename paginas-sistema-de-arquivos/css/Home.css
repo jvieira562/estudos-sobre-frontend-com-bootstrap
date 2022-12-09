@@ -1,5 +1,5 @@
 .navbar-config {
-    background-color: #ed1c24;
+    background-color: #0078d4;
     height: 48px;
 }
 .t48-48:hover {
@@ -13,7 +13,15 @@
 }
 .offcanvas-perfil {
     margin-top: 48px;
-    width: 330px!important;
+    width: 320px!important;
+    height: 190px!important;
+    border-bottom: black;
+}
+.offcanvas-config {
+    margin-top: 48px;
+    width: 320px!important;
+    height: 100%px!important;
+    border-bottom: black;
 }
 .container-principal-navbar{
     height: 48px;    
@@ -24,6 +32,18 @@
 }
 .fonte-usuario-perfil {
     font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+}
+.offcanvas-body {
+    overflow: hidden;
+}
+.container-atalho {
+    width: 16.3%!important;
+    background-color: antiquewhite;
+}
+.container-principal-body{
+    height: 400px;
+    width: auto!important;
+    background-color: aqua;
 }
 #btn-configuracoes {
     font-size: 18px;
@@ -40,7 +60,7 @@
     width: 88px;
     border-radius: 100%;
 }
-#navbarNome{
+#navbarNome {
     color: #fffff9!important;
     font-size: 16px;
     font-family: SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
@@ -48,42 +68,45 @@
 #nomeUsuarioPerfil{
     font-size: 17px;
 }
-
-
-
-
+#containerImagemPerfilOffcanvas{
+    width: 90px!important;
+}
+#containerTextoPerfilOffcanvas{
+    width: 230px!important;
+}
 @media screen and (max-width: 319px) {
  
     #navbarNome {
-        display: none;
-    }
-    #imagemPerfilOffcanvas {
-        display: none;
+        display: block;
+        
     }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 320px) {
     #barraDePesquisa {
         display: none;
     }
-    #imagemPerfilOffcanvas {
+    #imagemPerfilOffcanvas{
+        width: 200px;
+        height: 200px;
+    }
+    #containerImagemPerfilOffcanvas {
+        width: 100%!important;
+        height: 200px!important;
+        margin: 0%!important;
+        text-align: center;
+    }
+    #containerTextoPerfilOffcanvas {
+        width: 100%!important;
+        margin: 0%!important;
+        text-align: center;
         
-        display: block;
-        width: 250px;
-        height: 250px;
-    } 
-    #nomeUsuarioPerfil{
-        text-align: center;
-        font-size: 17px;
     }
-    .usuario-perfil-subtexto{
-        font-size: 13px;
-        text-align: center;
+    #barraDePesquisa {
+        
     }
-    #containerImagemPerfilOffcanvas{
-        height: 320px;
+    .offcanvas-perfil {
+        height: 100%!important;
     }
-    #containerTextoPerfilOffcanvas{
-        padding-top: 12px;
-    }
+
 }
 
