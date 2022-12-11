@@ -8,8 +8,7 @@
 .t48-48{   
     width: 48px!important;
     height: 48px;
-    margin-left: 1px;
-    
+    margin-left: 1px;    
 }
 .offcanvas-perfil {
     margin-top: 48px;
@@ -54,6 +53,9 @@
     height: 33px;
     border-radius: 100%;
 }
+#barraDePesquisa {
+    height: 32px!important;
+}
 
 #imagemPerfilOffcanvas{
     height: 88px;
@@ -81,7 +83,7 @@
         
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 350px) {
     #barraDePesquisa {
         display: none;
     }
@@ -106,6 +108,10 @@
     }
     .offcanvas-perfil {
         height: 100%!important;
+    }
+   .container-barra-pesquisa-navbar {
+        display: none!important;
+        
     }
 
 }

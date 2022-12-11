@@ -18,7 +18,7 @@
 
             <div class="col-3" style="height: 48px;">
                 <div class="row">
-                    <div class="col float-md-none pt-2">
+                    <div class="col float-md-none align-self-center">
                         <a class="navbar-brand" id="navbarNome" href="#">OneDrive</a>
                     </div>
                     <div class="col">
@@ -27,14 +27,17 @@
                 </div>
             </div>
 
-            <div class="col-6 text-center pt-2" id="barraDePesquisa" style="height: 48px;">
-                BARRA DE PESQUISA AQUI
+            <div class="col-6 text-center pt-2 container-barra-pesquisa-navbar" style="height: 48px;">
+                <form class="d-flex" role="search">
+                    <input class="form-control" id="barraDePesquisa" type="search" placeholder="Pesquisar" aria-label="Search">
+                </form>
             </div>
 
             <div class="col-sm-3">
                 <div class="row justify-content-end">
                     <div class="col-6 t48-48 pt-2 ps-3">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasConfig" class="bi bi-gear" id="btn-configuracoes"></a>
+                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasConfig" class="bi bi-gear"
+                            id="btn-configuracoes"></a>
                     </div>
                     <div class="col-6 t48-48 pt-2 ps-2">
                         <a href="">
@@ -58,22 +61,19 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="row offcanvas-body justify-content-center p-0">
-                    <div class="col-3 ms-1" id="containerImagemPerfilOffcanvas">
-                        <img id="imagemPerfilOffcanvas" src="img/imagem-perfil.jpg" alt="">
-                    </div>
-                
+                <div class="col-3 ms-1" id="containerImagemPerfilOffcanvas">
+                    <img id="imagemPerfilOffcanvas" src="img/imagem-perfil.jpg" alt="">
+                </div>
+
                 <div class="col-9 perfil-config fonte-usuario-perfil ms-2" id="containerTextoPerfilOffcanvas">
                     <h4 id="nomeUsuarioPerfil">José Victor S. Vieira</h4>
                     <p class="usuario-perfil-subtexto mb-1">josevictorvieira@gmail.com</p>
-                    <a href="#">
-                        <p class="usuario-perfil-subtexto pt-0 mb-1">Meu perfil</p>
-                    </a>
-                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasConfig">
-                        <p class="usuario-perfil-subtexto pt-0 mb-1">Configurações</p>
-                    </a>
-                    <a href="#">
-                        <p class="usuario-perfil-subtexto pt-0 mb-1">Sair</p>
-                    </a>
+
+                    <p class="usuario-perfil-subtexto pt-0 mb-1"><a href="#">Meu perfi</a>l</p>
+                    <p class="usuario-perfil-subtexto pt-0 mb-1"><a href="#" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasConfig">Configurações</a></p>
+                    <p class="usuario-perfil-subtexto pt-0 mb-1"><a href="#">Sair</a></p>
+
                 </div>
             </div>
         </section>
@@ -93,7 +93,7 @@
                     <p class="usuario-perfil-subtexto mb-1">josevictorvieira@gmail.com</p>
                     <a href="#">
                         <p class="usuario-gear-subtexto pt-0">Opções</p>
-                        
+
                     </a>
                 </div>
             </div>
