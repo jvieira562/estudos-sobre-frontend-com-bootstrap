@@ -14,7 +14,7 @@
     margin-top: 48px;
     width: 320px!important;
     height: 190px!important;
-    border-bottom: black;
+    border-bottom: black;    
 }
 .offcanvas-config {
     margin-top: 48px;
@@ -25,24 +25,61 @@
 .container-principal-navbar{
     height: 48px;    
 }
-.usuario-perfil-subtexto{
-    font-size: 13px;
-
+.container-pesquisa-span{
+    margin-top: 2px;
+    height: 44px!important;
+    padding-top: 5px;
+    background-color: transparent;
+    margin-left: 8px;
+    margin-right: 8px;
 }
-.fonte-usuario-perfil {
+.usuario-perfil-subtexto{
+    font-size: 14px;
+    text-decoration: none!important;
+    font-family: SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
+}
+.usuario-perfil-subtexto a {
+    color: #528de2;
+    text-decoration: none!important;    
+}
+.usuario-perfil-subtexto a:hover {
+    text-decoration-line: underline!important;    
+}
+.usuario-gear-subtexto{
+    font-size: 14px;
+    text-decoration: none!important;
+    font-family: SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
+}
+.usuario-gear-subtexto a{
+    color: #528de2;
+    text-decoration: none!important;
+}
+.usuario-gear-subtexto a:hover{
+    text-decoration-line: underline!important;
+}
+.fonte-email-perfil {
+    font-size: 14px;
     font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+    line-height: normal;
 }
 .offcanvas-body {
     overflow: hidden;
 }
 .container-atalho {
-    width: 16.3%!important;
+    width: 228px!important;
     background-color: antiquewhite;
+    height: 100%!important;
 }
 .container-principal-body{
-    height: 400px;
-    width: auto!important;
-    background-color: aqua;
+    height: 100%!important;
+}
+.container-ferramenta {
+    background-color: aqua!important;
+    height: 60px!important;
+}
+.container-conteudo{
+    background-color: azure;
+    position: absolute;
 }
 #btn-configuracoes {
     font-size: 18px;
@@ -68,7 +105,7 @@
     font-family: SegoeUI-SemiBold-final,Segoe UI Semibold,SegoeUI-Regular-final,Segoe UI,"Segoe UI Web (West European)",Segoe,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Tahoma,Helvetica,Arial,sans-serif;
 }
 #nomeUsuarioPerfil{
-    font-size: 17px;
+    font-size: 16px;
 }
 #containerImagemPerfilOffcanvas{
     width: 90px!important;
@@ -76,11 +113,15 @@
 #containerTextoPerfilOffcanvas{
     width: 230px!important;
 }
-@media screen and (max-width: 319px) {
- 
-    #navbarNome {
-        display: block;
-        
+#btnPesquisa{
+    color: white;
+}
+@media screen and (min-width: 767px) {
+    #btnPesquisa {
+        display: none!important;
+    }
+    #pesquisaSpan {
+        display: none!important;
     }
 }
 @media screen and (max-width: 350px) {
@@ -103,15 +144,18 @@
         text-align: center;
         
     }
-    #barraDePesquisa {
-        
+    .container-nome{
+        display: none;
     }
     .offcanvas-perfil {
         height: 100%!important;
     }
-   .container-barra-pesquisa-navbar {
+    #navbarNome {
         display: none!important;
-        
+    }
+    .container-pesquisa-span{
+        margin-left: 10px;
+        margin-right: 30px;
     }
 
 }
