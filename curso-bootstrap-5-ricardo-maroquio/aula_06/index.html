@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<style>
+    .h100 {
+        height: 100px;
+    }
+
+    .h400 {
+        height: 400px;
+    }
+
+    .h800
+     {
+        height: 800px;
+    }
+
+    .h10 {
+        height: 40px;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row cabecalho">
+            <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+        </div>
+        <div class="row corpo h800">
+            <div class="col-12 col-md-3 bg-dark bg-opacity-75"></div>
+            <div class="col-12 col-md-9 bg-dark bg-opacity-25">
+                <div class="col-12-col-sm-9 bg-dark bg-opacity-100 h10"></div>
+            </div>
+        </div>
+        <div class="row rodape">
+            <div class="col-12 bg-dark bg-opacity-50 h100"></div>
+        </div>
+    </div>
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
