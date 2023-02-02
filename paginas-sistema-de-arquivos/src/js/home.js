@@ -1,5 +1,6 @@
-// function retiraCaixaDePesquisa(){
-//     var html = "";
-//     document.getElementById("barraDePesquisa").innerHTML = html;
-//     document.
-// }
+
+var re = /apples/gi
+
+var str = 'Apples are round, and apples are juicy. '
+var newstr = /*inserir código aqui*/
+console. Iog (newstr )
