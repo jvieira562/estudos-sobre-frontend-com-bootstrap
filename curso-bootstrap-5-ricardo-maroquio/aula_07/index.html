@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .row {
+            height: 200px;
+            background-color: aliceblue;
+        }
+
+        .col-3 {
+            background-color: burlywood;
+            padding: 20px;
+            border: solid 1px black;
+        }
+        .verde {
+            background-color: grey;
+            color: white;
+            height: 50px;
+            font-size: 30px;
+        }
+    </style>
+
+    <title>Formatação de Colunas</title>
+</head>
+
+<body>
+    <p id="home"></p>
+    <div class="container">
+        <div class="row" style="height: 55px;">
+            <div class="col">
+                <h1>Formatação de colunas</h1>
+            </div>
+            <div class="col-2 align-self-center">
+                <p><a href="/index.html">Voltar para home</a></p>
+            </div>
+        </div>
+        <ul>
+            <li>Alinhamento vertical <a href="#container1">view</a></li>
+            <li>Alinhamento horizontal <a href="#container2">view</a></li>
+            <li>Formatação de colunas <a href="#container3"> view</a></li>
+            <li>Deslocmento de margens <a href="#container4">view</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h4 id="container1">Container 1 - Alinhamento vertical</h4>
+        <p>Alinhamento da vertical com a classe <b>align-self </b>start | center | end </p>
+        <div class="row aling-self-end">
+            <div class="col-3 align-self-start">align-self-start</div>
+            <div class="col-3 align-self-center">align-self-center</div>
+            <div class="col-3 align-self-start">align-self-end</div>
+        </div>
+        <hr>
+        <h4 id="container2">Container 2 - Alinhamento horizontal</h4>
+        <br>
+        <ul>
+            <li>
+                <p>Alinhando items no centro com a classe <b>justify-content-center</b></p>
+                <div class="row justify-content-center">
+                    <div class="col-3">Coluna 1</div>
+                    <div class="col-3">Coluna 2</div>
+                    <div class="col-3">Coluna 3</div>
+                </div>
+            </li>
+            <br>
+            <li>
+                <p>Alinhando espaçado com a classe <b>justify-content-between</b></p>
+                <div class="row justify-content-between">
+                    <div class="col-3">Coluna 1</div>
+                    <div class="col-3">Coluna 2</div>
+                    <div class="col-3">Coluna 3</div>
+                </div>
+            </li>
+            <br>
+            <li>
+                <p>Alinhando espaçado nas margens usando a classe <b>justify-content-around</b></p>
+                <div class="row justify-content-around">
+                    <div class="col-3">Coluna 1</div>
+                    <div class="col-3">Coluna 2</div>
+                    <div class="col-3">Coluna 3</div>
+                </div>
+            </li>
+            <br>
+            <li>
+                <p>Alinhando com espaçamentos iguais usando a classe <b>justify-content-evenly</b></p>
+                <div class="row justify-content-evenly">
+                    <div class="col-3">Coluna 1</div>
+                    <div class="col-3">Coluna 2</div>
+                    <div class="col-3">Coluna 3</div>
+                </div>
+        </ul>
+        <h4 id="container3">Container 3 - Formatação de colunas</h4>
+        <ul>
+            <li>
+                <p>Forçando quebra de linha entre colunas com a classe<b> w-100</b></p>
+                <div class="row justify-content-evenly">
+                    <div class="col-3">align-self-start</div>
+                    <div class="w-100"></div>
+                    <div class="col-3">align-self-center</div>
+                    <div class="col-3">align-self-end</div>
+                </div>
+            </li>
+            <br>
+            <li>
+                <p>Reordenando colunas com as classes <b>order </b>first | last | números </p>
+                <div class="row aling-self-end">
+                    <div class="col-3 order-last">C1 - order-last</div>
+                    <div class="col-3 order-3">C2 - order-3</div>
+                    <div class="col-3 order-0">C3 - order-0</div>
+                    <div class="col-3">C4</div>
+                </div>
+                <br>
+            </li>
+            <li>
+                <p>Deslocamento de colunas com a classe <b>offset </b>1 | 2 | 3 </p>
+                <div class="row">
+                    <div class="col-3 offset-1">1 coluna deslocada a direita</div>
+                    <div class="col-3 offset-2">2 colunas descolacas a direita</div>
+                    <div class="col-3 order-first">Usando order-first</div>
+                </div>
+            </li>
+        </ul>
+        <hr>
+        <h4 id="container4">Container 4 - Deslocamento de margens</h4>
+        <ul>
+            <li>
+                <p>Usando espaçamento com a classe<b> ms-auto</b></p>
+                <div class="row">
+                    <div class="col-3 ms-auto"><b>ms-auto</b><br>margens automaticas com espaçamento iguais.</div>
+                    <div class="col-3 ms-auto"><b>ms-auto</b><br>ms = margen start</div>
+                    <!-- <div class="col-3">align-self-end</div> -->
+                </div>
+            </li>
+            <br>
+            <li>
+                <p>Usando espaçamento com a classe<b> mx-auto</b></p>
+                <div class="row">
+                    <div class="col-3 mx-auto"><b>mx-auto</b><br>x vem do eixo X, horizontal. Dividido de formas
+                        automaticas</div>
+                    <!-- <div class="col-3 ms-auto"><b>ms-auto</b><br>ms = margen start</div> -->
+                    <!-- <div class="col-3">align-self-end</div> -->
+                </div>
+            </li>
+            <br>
+            <li>
+                <p>Usando colunas foram do container do tipo <b>row</b></p>
+                
+                    <div class="col-3"><b>DIV1</b><br>c</div>
+                    <div class="col-3"><b>DIV2</b><br>c</div>
+
+                <!-- <div class="col-3">align-self-end</div> -->
+
+            </li>
+            <br>
+            <div class="row verde">
+                <div class="col-2 mx-auto">
+                    <p><a class="verde" href="#home">Ir para o topo</a></p>
+                </div>
+            </div>
+    </div>
+
+</body>
+
+</html>
